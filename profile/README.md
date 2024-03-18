@@ -1,4 +1,4 @@
-# [![eProsima](https://raw.githubusercontent.com/lmd-a/.github/main/profile/eprosima_github_banner.png)](https://eprosima.com/)
+# [![eProsima](https://raw.githubusercontent.com/eProsima/.github/main/profile/eprosima_github_banner.png)](https://eprosima.com/)
 
 [eProsima](https://eprosima.com/) 
 
