@@ -1,24 +1,59 @@
-# Motivation
+# Security Policy
+
+*Last updated: 2026-09-16*
+
+## Motivation
 
 As a proud member of the open source community, eProsima takes the security of its software very seriously.
 As such, we would like to be informed when a security bug is found so that it can be fixed and disclosed as quickly as possible.
 The rest of the document outlines what is covered by this policy and how to report security vulnerabilities.
 
-# Scope
+## Scope
 
 The Vulnerability Disclosure Program outlined here covers all code within our publicly available products.
 An increasing number of companies are using our DDS based solutions, and during this growth period we anticipate vulnerabilities to be identified in products before vendors have an established vulnerability reporting program.
 We will work with you on a best-effort basis to help connect you with responsible parties best suited to address your concerns.
 
-# Safe Harbor
+This program does not cover repositories in this organization that are forks of third-party projects.
+Vulnerabilities in upstream code should be reported to the corresponding upstream project, following its own security policy.
+If the vulnerability is specific to changes made by eProsima in the fork, please report it to us using the channels described below.
+
+## Out of scope
+
+This program covers the source code and released artifacts of the products described above.
+eProsima's web sites, cloud services and corporate infrastructure, including eprosima.com, are not part of this program, and this policy does not authorize any testing against them.
+
+Our software is a component of a larger system, and its security depends on the environment in which that system runs.
+Issues that require an attacker to already hold the privileges of the application process, such as the ability to execute code within it, to read or modify its memory, or to alter its configuration, credentials or key material on disk, are not considered vulnerabilities in our products.
+Ensuring the security of the host and of the processes that use our libraries is the responsibility of the integrator.
+This includes the configuration of our software: where a setting widens access to a resource beyond its default, such as the permissions of a shared memory segment, the consequences of that choice are out of scope.
+
+This does not exclude defects in our software itself, such as a resource being created with weaker permissions than its documented or configured value.
+Reports of that kind are in scope.
+
+The following activities are not authorized under this policy, and therefore fall outside the Safe Harbor described below:
+
+- Denial of service, resource exhaustion, or any other form of stress testing.
+- Social engineering or phishing directed at eProsima personnel, users or customers.
+- Physical access attempts against eProsima offices, staff or equipment.
+- Accessing, modifying or extracting data belonging to other users, customers or third parties.
+- Automated scanning or fuzzing directed at production systems or services operated by eProsima or by its customers.
+
+None of the above restricts testing against your own builds and deployments of our software, which is the kind of research this program is intended to encourage.
+If your research would require any of the activities listed above, please contact us at support@eprosima.com before proceeding.
+
+## Safe Harbor
 
 eProsima strongly supports security research into its software and seeks to encourage that research.
-eProsima will not engage in legal action against individuals who act in good faith to identify, report and fix vulnerabilities in our products, so long as they operate in accordance with any applicable laws or this policy.
+eProsima will not engage in legal action against individuals who act in good faith to identify, report and fix vulnerabilities in our products, so long as they operate in accordance with any applicable laws and this policy.
 Research or testing against DDS systems without the consent of the owner/operator is in violation of this policy and strongly discouraged due to potential health and human safety concerns.
+
+This policy may be revised from time to time.
+The version of this policy in effect at the time your research is carried out is the version that applies to it; previous versions remain available in this file's [commit history](https://github.com/eProsima/.github/commits/main/SECURITY.md).
 
 If at any time you have concerns about whether your activities are consistent with this policy, please contact us at support@eprosima.com.
 
-# How to submit a vulnerability
+## How to submit a vulnerability
 
 Please report security vulnerabilities using GitHub Security Advisories whenever possible.
 
@@ -29,7 +64,8 @@ If GitHub Security Advisories are not available in the affected repository, plea
 Clearly indicate which eProsima project and versions are affected.
 
 If you are unable to use GitHub Security Advisories, you may instead submit the vulnerability by emailing support@eprosima.com.
-We kindly ask you to encrypt your report using the PGP public key [vulnerability-public.key](vulnerability-public.key) contained in this repository.
+In that case, we kindly ask you to encrypt your report using the PGP public key [vulnerability-public.key](https://github.com/eProsima/policies/blob/main/vulnerability-public.key) contained in the [eProsima/policies](https://github.com/eProsima/policies) repository.
+Before encrypting, please verify that the key fingerprint is `47C9 326F B336 F759 7EB4 809E AF88 37E2 B6A8 41B6`.
 
 Whichever reporting mechanism you use, the more information provided about the bug, the easier it will be to investigate and fix.
 If you already have a fix, please include it with your report.
@@ -41,7 +77,7 @@ In order to protect our users, unless otherwise agreed by both parties, we ask t
 The group handling the report will also follow this timeline.
 If you do not wish to be acknowledged in the release communications please indicate so when you submit the vulnerability.
 
-# What to expect in response to a vulnerability disclosure
+## What to expect in response to a vulnerability disclosure
 
 Expect a timely response to your notification, normally within two business days, during which time we will triage your vulnerability report.
 
