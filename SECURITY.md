@@ -77,6 +77,25 @@ In order to protect our users, unless otherwise agreed by both parties, we ask t
 The group handling the report will also follow this timeline.
 If you do not wish to be acknowledged in the release communications please indicate so when you submit the vulnerability.
 
+## Use of AI assistance in reports
+
+You may use AI tools to help you find, analyze or describe a vulnerability.
+If you do, you remain fully responsible for the content of your report, exactly as if you had written every part of it yourself.
+We also ask that you tell us which parts of the report were produced with AI assistance.
+
+Before submitting, please confirm that you have reproduced the issue against the affected version of our software, that the functions, files and code paths your report refers to actually exist, and that its conclusions still hold when you check them yourself.
+
+Please describe the issue briefly and in your own words.
+A long generated explanation takes far longer to read than it took to produce, and that cost falls on the small team that has to triage it.
+The few extra minutes you spend making a report short and specific are worth more to us than any volume of generated text.
+
+Please do not use automated agents or bots to open security advisories in our repositories.
+Reports submitted that way tend to arrive in duplicate, to describe behaviour that is not present in the code, or to restate findings that are already public, and triaging them takes time away from fixing real vulnerabilities.
+Every report should be reviewed and submitted by a person who has verified it.
+
+Reports that appear to be unverified machine output will be closed without a detailed analysis.
+Repeatedly submitting such reports may lead us to block the account or address they come from.
+
 ## What to expect in response to a vulnerability disclosure
 
 Expect a timely response to your notification, normally within two business days, during which time we will triage your vulnerability report.
